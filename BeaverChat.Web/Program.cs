@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
-namespace BeaverChat.Web
+namespace BeaverChat.Backend
 {
     public class Program
     {
@@ -14,9 +16,20 @@ namespace BeaverChat.Web
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureLogging(logging =>
+                {
+                    logging.ClearProviders();
+                    logging.AddConsole();
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.ConfigureKestrel((context, options) =>
+                    {
+#if DEBUG
+                        options.Listen(IPAddress.Loopback, 5000);
+#endif
+                    })
+                    .UseStartup<Startup>();
                 });
     }
 }

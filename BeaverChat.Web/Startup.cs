@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using BeaverChat.Backend.Hubs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -7,9 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using BeaverChat.Models;
 
-namespace BeaverChat.Web
+namespace BeaverChat.Backend
 {
     public class Startup
     {
@@ -24,7 +24,13 @@ namespace BeaverChat.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IItemRepository, ItemRepository>();
+            services.AddSignalR();
+            services.AddCors(options => options.AddPolicy("CorsPolicy", builder =>
+            {
+                builder.AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .WithOrigins("https://localhost:5002");
+            }));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -33,13 +39,17 @@ namespace BeaverChat.Web
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHsts();
+            }
 
-            app.UseHttpsRedirection();
             app.UseRouting();
-
+            app.UseCors("CorsPolicy");
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>("/hubs/chat");
             });
         }
     }

@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.Android", "Beave
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.iOS", "BeaverChat.iOS\BeaverChat.iOS.csproj", "{AD31E650-4319-41E6-9F28-53D2EFBC4418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.Web", "BeaverChat.Web\BeaverChat.Web.csproj", "{E30460E9-160C-4C16-BCDD-6F03C05207D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.Backend", "BeaverChat.Web\BeaverChat.Backend.csproj", "{E30460E9-160C-4C16-BCDD-6F03C05207D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat", "BeaverChat\BeaverChat.csproj", "{FA1258C0-1768-4574-95FA-22EDA4DF0F3B}"
 EndProject
