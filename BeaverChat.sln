@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat", "BeaverChat\Be
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.Core", "BeaverChat.Core\BeaverChat.Core.csproj", "{B904FC08-216B-48F2-8A0F-C0D0FBBD30AB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BeaverChat.Mobile", "BeaverChat.Mobile", "{039C83EA-A615-4107-A121-4AA464551DF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,5 +83,10 @@ Global
 		{B904FC08-216B-48F2-8A0F-C0D0FBBD30AB}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{B904FC08-216B-48F2-8A0F-C0D0FBBD30AB}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{B904FC08-216B-48F2-8A0F-C0D0FBBD30AB}.Release|iPhone.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA1258C0-1768-4574-95FA-22EDA4DF0F3B} = {039C83EA-A615-4107-A121-4AA464551DF3}
+		{AD31E650-4319-41E6-9F28-53D2EFBC4418} = {039C83EA-A615-4107-A121-4AA464551DF3}
+		{5B0112A5-DF3D-4FBA-8869-41074E502EAD} = {039C83EA-A615-4107-A121-4AA464551DF3}
 	EndGlobalSection
 EndGlobal
