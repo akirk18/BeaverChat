@@ -1,17 +1,17 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.Android", "BeaverChat.Android\BeaverChat.Android.csproj", "{5B0112A5-DF3D-4FBA-8869-41074E502EAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.Android", "BeaverChat.Mobile\BeaverChat.Android\BeaverChat.Android.csproj", "{5B0112A5-DF3D-4FBA-8869-41074E502EAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.iOS", "BeaverChat.iOS\BeaverChat.iOS.csproj", "{AD31E650-4319-41E6-9F28-53D2EFBC4418}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.iOS", "BeaverChat.Mobile\BeaverChat.iOS\BeaverChat.iOS.csproj", "{AD31E650-4319-41E6-9F28-53D2EFBC4418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.Backend", "BeaverChat.Web\BeaverChat.Backend.csproj", "{E30460E9-160C-4C16-BCDD-6F03C05207D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.Backend", "BeaverChat.Backend\BeaverChat.Backend.csproj", "{E30460E9-160C-4C16-BCDD-6F03C05207D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat", "BeaverChat\BeaverChat.csproj", "{FA1258C0-1768-4574-95FA-22EDA4DF0F3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat", "BeaverChat.Mobile\BeaverChat\BeaverChat.csproj", "{FA1258C0-1768-4574-95FA-22EDA4DF0F3B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaverChat.Core", "BeaverChat.Core\BeaverChat.Core.csproj", "{B904FC08-216B-48F2-8A0F-C0D0FBBD30AB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BeaverChat.Mobile", "BeaverChat.Mobile", "{039C83EA-A615-4107-A121-4AA464551DF3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BeaverChat.Mobile", "BeaverChat.Mobile", "{ECAA14E0-A9C4-4CAA-A6A3-313AD119D8A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,8 +85,8 @@ Global
 		{B904FC08-216B-48F2-8A0F-C0D0FBBD30AB}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FA1258C0-1768-4574-95FA-22EDA4DF0F3B} = {039C83EA-A615-4107-A121-4AA464551DF3}
-		{AD31E650-4319-41E6-9F28-53D2EFBC4418} = {039C83EA-A615-4107-A121-4AA464551DF3}
-		{5B0112A5-DF3D-4FBA-8869-41074E502EAD} = {039C83EA-A615-4107-A121-4AA464551DF3}
+		{FA1258C0-1768-4574-95FA-22EDA4DF0F3B} = {ECAA14E0-A9C4-4CAA-A6A3-313AD119D8A4}
+		{5B0112A5-DF3D-4FBA-8869-41074E502EAD} = {ECAA14E0-A9C4-4CAA-A6A3-313AD119D8A4}
+		{AD31E650-4319-41E6-9F28-53D2EFBC4418} = {ECAA14E0-A9C4-4CAA-A6A3-313AD119D8A4}
 	EndGlobalSection
 EndGlobal

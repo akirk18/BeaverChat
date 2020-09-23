@@ -27,6 +27,6 @@
     <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BeaverChat.Core\BeaverChat.Core.csproj" />
+    <ProjectReference Include="..\..\BeaverChat.Core\BeaverChat.Core.csproj" />
   </ItemGroup>
 </Project>
