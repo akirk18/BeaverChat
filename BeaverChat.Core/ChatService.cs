@@ -114,7 +114,7 @@ namespace BeaverChat.Core
             if (!IsConnected)
                 throw new InvalidOperationException("Not Connected");
 
-            await hubConnection.InvokeAsync("SendMessageGroup", group, userName, message);
+            await hubConnection.InvokeAsync("SendMessage", group, userName, message);
         }
 
         public List<string> GetRooms()

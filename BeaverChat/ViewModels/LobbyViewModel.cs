@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using BeaverChat.Helpers;
+using BeaverChat.Views;
 using Xamarin.Forms;
 
 namespace BeaverChat.ViewModels
@@ -37,8 +38,7 @@ namespace BeaverChat.ViewModels
 
             Settings.Group = group;
 
-            // TODO add new ChatNaviagtionPage(new GroupChatPage())
-            await navigation.PushModalAsync();
+            await navigation.PushModalAsync(new NavigationPage(new GroupChatPage()));
         }
 
 

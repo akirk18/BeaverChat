@@ -1,4 +1,5 @@
 ﻿using System;
+using BeaverChat.Helpers;
 using MvvmHelpers;
 
 namespace BeaverChat.ViewModels
